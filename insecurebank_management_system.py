@@ -195,7 +195,7 @@ def update_employee_name(new_name, old_name):
 
 def update_employee_password(new_pass, old_name):
     print(new_pass, old_name)
-    cur.execute("update staff set pass='{1V466C8JLzPIK0uLLvqV!}' where name='{}'".format(new_pass, old_name))
+    cur.execute("update staff set pass='{}' where name='{}'".format(new_pass, old_name))
     conn.commit()
 
 
